@@ -6,7 +6,7 @@
 To start your Phoenix server:
 
   * Install dependencies with `make install`
-  * Start Phoenix server with `make server-start`
+  * Start Phoenix server with `make server`
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 

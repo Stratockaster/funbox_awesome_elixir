@@ -1,0 +1,1 @@
+alias FunboxAwesomeElixir.{Persister, Controller, Storage, Crawler}

@@ -1,0 +1,17 @@
+<ul>
+  <%= for {category, _category_description, _repos} <- @data do %>
+    <li><a href="#<%= category %>"><%= category %></a></li>
+  <% end %>
+</ul>
+
+<%= for {category, category_description, repos} <- @data do %>
+  <h2 id="<%= category %>"><%= category %></h2>
+  <p><%= category_description %></p>
+
+  <ul>
+    <%= for repo <- repos do %>
+      <li>[<%= repo[:name] %>](<a href="<%= repo[:url] %>" target="_blank"><%= repo[:url] %></a>) 
+        stars: <%= repo[:stars] %> days: <%= repo[:days] %> - <%= repo[:description] %></li>
+    <% end %>
+  </ul>
+<% end %>
